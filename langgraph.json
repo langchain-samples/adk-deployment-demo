@@ -1,7 +1,9 @@
 {
+    "$schema": "https://langgra.ph/schema.json",
     "dependencies": ["."],
     "graphs": {
       "adk_echo": "./agent.py:agent"
     },
-    "env": ".env"
-}
+    "env": ".env",
+    "python_version": "3.12"
+  }
