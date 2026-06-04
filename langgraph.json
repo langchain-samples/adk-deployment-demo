@@ -4,4 +4,4 @@
       "adk_echo": "./agent.py:agent"
     },
     "env": ".env"
-  }
+}
