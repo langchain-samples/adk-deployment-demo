@@ -8,14 +8,18 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "deployments-wrap-sdk", extra = ["google-adk"] },
+]
+
+[package.dev-dependencies]
+dev = [
     { name = "langgraph-cli", extra = ["inmem"] },
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "deployments-wrap-sdk", extras = ["google-adk"], specifier = ">=0.0.1" },
-    { name = "langgraph-cli", extras = ["inmem"], specifier = ">=0.4.27" },
-]
+requires-dist = [{ name = "deployments-wrap-sdk", extras = ["google-adk"], specifier = ">=0.0.1" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "langgraph-cli", extras = ["inmem"], specifier = ">=0.4.27" }]
 
 [[package]]
 name = "aiosqlite"
